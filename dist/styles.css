@@ -51,39 +51,31 @@ h1 em, h2 em { color: var(--orange); font-weight: 400; }
 .primary-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 42px; min-width: 228px; padding: 16px 20px; border: 1.5px solid var(--ink); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
 .primary-link span { font-size: 19px; font-weight: 400; }
 
-.services { padding-block: 116px 124px; color: var(--paper); background: var(--ink); }
-.services-intro { display: grid; grid-template-columns: minmax(0, 1fr) 390px; align-items: end; gap: clamp(48px, 8vw, 130px); margin-bottom: 64px; }
+.services { padding-block: 92px 108px; color: var(--paper); background: var(--ink); }
+.services-intro { margin-bottom: 50px; }
 .services-intro .eyebrow, .service-process .eyebrow { color: var(--butter); }
 .services-intro .eyebrow span, .service-process .eyebrow span { padding-right: 10px; border-right: 1px solid rgba(233, 200, 107, .45); }
-.services-intro h2 { max-width: 800px; margin: 26px 0 0; font-size: clamp(70px, 6.45vw, 106px); letter-spacing: -.055em; line-height: .86; }
+.services-intro h2 { max-width: 800px; margin: 0; font-size: clamp(64px, 5.6vw, 90px); letter-spacing: -.055em; line-height: .88; }
 .services-intro h2 em, .service-process h3 em { color: var(--butter); }
-.services-note { display: grid; grid-template-columns: 34px 1fr; gap: 16px; align-items: start; margin-bottom: 7px; padding-top: 21px; border-top: 1px solid rgba(244, 238, 226, .3); }
-.services-note > span { color: var(--butter); font-size: 18px; line-height: 1.4; }
-.services-note p { margin: 0; color: #e1e9da; font-size: 16px; line-height: 1.65; }
-.service-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: 335px 335px; gap: 16px; }
-.service { position: relative; min-width: 0; overflow: hidden; color: var(--paper); background: #102b24; isolation: isolate; }
-.service::after { position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgba(8, 24, 20, .05) 28%, rgba(8, 24, 20, .88) 100%); content: ""; }
-.service-image { position: absolute; z-index: -2; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .55s ease; }
-.service:hover .service-image { transform: scale(1.025); }
-.service-number { position: absolute; top: 22px; right: 22px; display: grid; width: 44px; height: 44px; place-items: center; border: 1px solid rgba(244, 238, 226, .65); border-radius: 50%; font-size: 11px; font-weight: 700; letter-spacing: .08em; }
-.service-content { position: absolute; right: 0; bottom: 0; left: 0; padding: 28px 30px 29px; }
-.service-kicker { margin: 0 0 10px; color: var(--butter); font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
-.service h3 { margin: 0 0 9px; font: clamp(39px, 3vw, 54px)/.92 "Instrument Serif", Georgia, serif; letter-spacing: -.03em; }
-.service p:not(.service-kicker) { max-width: 430px; margin: 0; color: rgba(244, 238, 226, .88); font-size: 14px; line-height: 1.48; }
-.service-fit { display: block; margin-top: 22px; padding-top: 16px; border-top: 1px solid rgba(244, 238, 226, .35); color: rgba(244, 238, 226, .72); font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
-.service-dinners { grid-column: span 7; grid-row: span 2; }
-.service-events { grid-column: span 5; }
-.service-prep, .service-kids { grid-column: span 2; }
-.service-kids { grid-column: span 3; }
-.service-events .service-image { object-position: center 55%; }
-.service-kids .service-image { object-position: center 66%; }
-.service-prep .service-content, .service-kids .service-content { padding: 22px 22px 24px; }
-.service-prep h3, .service-kids h3 { font-size: clamp(32px, 2.4vw, 43px); }
-.service-prep p:not(.service-kicker), .service-kids p:not(.service-kicker) { display: none; }
+.services-layout { position: relative; }
+.services-note { position: absolute; z-index: 1; top: 48%; right: clamp(32px, 7vw, 100px); width: min(43%, 520px); padding-block: 22px; transform: translateY(-50%); background: var(--ink); }
+.services-note p { margin: 0; color: #e1e9da; font-size: clamp(24px, 2.05vw, 32px); line-height: 1.38; }
+.service-list { width: 50%; margin: 0; padding: 0; border-top: 1px solid rgba(244, 238, 226, .4); list-style: none; }
+.service-list li { display: grid; grid-template-columns: 54px minmax(0, 1fr); align-items: center; gap: 18px; padding: 18px 4px 20px; border-bottom: 1px solid rgba(244, 238, 226, .4); }
+.service-list li > span { color: var(--butter); font-size: 10px; font-weight: 700; letter-spacing: .11em; }
+.service-list h3 { margin: 0; font: clamp(40px, 3.8vw, 58px)/.95 "Instrument Serif", Georgia, serif; letter-spacing: -.035em; }
+.food-showcase { margin-top: 56px; }
+.food-showcase-heading { display: grid; grid-template-columns: minmax(0, 1fr) 390px; align-items: end; gap: clamp(48px, 8vw, 130px); margin-bottom: 38px; padding-top: 24px; border-top: 1px solid rgba(244, 238, 226, .4); }
+.food-showcase .eyebrow { color: var(--butter); }
+.food-showcase .eyebrow span { padding-right: 10px; border-right: 1px solid rgba(233, 200, 107, .45); }
+.food-showcase h3 { margin: 18px 0 0; font: clamp(64px, 6vw, 92px)/.9 "Instrument Serif", Georgia, serif; letter-spacing: -.045em; }
+.food-showcase-heading > p { margin: 0 0 6px; color: rgba(244, 238, 226, .8); font-size: 15px; line-height: 1.65; }
+.food-gallery { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.food-gallery img { display: block; width: 100%; height: clamp(190px, 18vw, 270px); object-fit: cover; background: #102b24; }
 .service-process { display: grid; grid-template-columns: minmax(250px, .8fr) minmax(500px, 1.65fr); gap: 28px 70px; margin-top: 72px; padding: 52px; color: var(--ink); background: var(--butter); }
 .service-process .eyebrow { color: var(--ink); }
 .service-process .eyebrow span { border-color: rgba(25, 60, 50, .35); }
-.service-process h3 { margin: 18px 0 0; font: clamp(50px, 4.2vw, 70px)/.9 "Instrument Serif", Georgia, serif; letter-spacing: -.04em; }
+.service-process h3 { margin: 0; font: clamp(50px, 4.2vw, 70px)/.9 "Instrument Serif", Georgia, serif; letter-spacing: -.04em; }
 .service-process h3 em { color: var(--orange); font-weight: 400; }
 .process-steps { margin: 0; padding: 0; list-style: none; }
 .process-steps li { display: grid; grid-template-columns: 35px 1fr; gap: 20px; padding: 20px 0; border-top: 1px solid rgba(25, 60, 50, .32); }
@@ -108,15 +100,15 @@ h1 em, h2 em { color: var(--orange); font-weight: 400; }
   h1 { font-size: clamp(59px, 6vw, 75px); }
 }
 @media (max-width: 1000px) {
-  .services-intro { display: block; }
-  .services-note { max-width: 520px; margin-top: 36px; }
-  .service-grid { grid-template-rows: 460px 310px 310px; }
-  .service-dinners { grid-column: 1 / -1; grid-row: auto; }
-  .service-events { grid-column: 1 / -1; }
-  .service-prep, .service-kids { grid-column: span 6; }
-  .service-dinners .service-image { object-position: center 48%; }
+  .food-showcase-heading { display: block; }
+  .food-showcase-heading > p { max-width: 520px; margin-top: 28px; }
+  .food-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .service-process { grid-template-columns: 1fr; padding: 44px; }
   .booking-cta { grid-column: auto; }
+}
+@media (max-width: 850px) {
+  .service-list { width: 100%; }
+  .services-note { position: static; width: auto; max-width: 620px; margin-top: 36px; padding-top: 21px; padding-bottom: 0; transform: none; background: transparent; }
 }
 @media (max-width: 700px) {
   .wrap { width: min(100% - 40px, 1480px); }
@@ -135,20 +127,20 @@ h1 em, h2 em { color: var(--orange); font-weight: 400; }
   .hero-after p { font-size: 15px; }
   .hero-after .primary-link { margin-top: 28px; }
   .services { padding-block: 76px 82px; }
-  .services-intro { display: block; margin-bottom: 42px; }
+  .services-intro { margin-bottom: 42px; }
   .services-intro h2 { font-size: clamp(58px, 14.5vw, 82px); line-height: .88; }
   .services-note { max-width: 480px; margin-top: 36px; }
-  .services-note p { font-size: 15px; }
-  .service-grid { display: grid; grid-template-columns: 1fr; grid-template-rows: 510px repeat(3, 340px); gap: 12px; }
-  .service-dinners, .service-events, .service-prep, .service-kids { grid-column: auto; grid-row: auto; }
-  .service-content, .service-prep .service-content, .service-kids .service-content { padding: 23px 22px 25px; }
-  .service h3, .service-prep h3, .service-kids h3 { margin-bottom: 7px; font-size: 42px; }
-  .service p:not(.service-kicker), .service-prep p:not(.service-kicker), .service-kids p:not(.service-kicker) { display: block; font-size: 13px; }
-  .service-fit { margin-top: 17px; padding-top: 13px; font-size: 9px; }
-  .service-number { top: 17px; right: 17px; width: 40px; height: 40px; }
-  .service-kids .service-image { object-position: center 66%; }
-  .service-process { display: block; margin-top: 44px; padding: 32px 24px 24px; }
-  .service-process h3 { margin: 15px 0 40px; font-size: 55px; }
+  .services-note p { font-size: 18px; }
+  .service-list li { grid-template-columns: 28px minmax(0, 1fr); gap: 15px; padding: 15px 0 17px; }
+  .service-list h3 { font-size: clamp(38px, 11vw, 48px); }
+  .food-showcase { margin-top: 58px; }
+  .food-showcase-heading { margin-bottom: 30px; padding-top: 26px; }
+  .food-showcase h3 { font-size: clamp(58px, 18vw, 76px); }
+  .food-showcase-heading > p { margin-top: 22px; font-size: 14px; }
+  .food-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .food-gallery img { height: 44vw; max-height: 260px; }
+  .service-process { display: block; margin-top: 64px; padding: 32px 24px 24px; }
+  .service-process h3 { margin: 0 0 40px; font-size: 55px; }
   .process-steps li { gap: 12px; padding-block: 18px; }
   .process-steps li:first-child { padding-top: 0; }
   .process-steps strong { font-size: 24px; }
